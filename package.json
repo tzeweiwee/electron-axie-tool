@@ -1,7 +1,7 @@
 {
   "name": "axie-infinity-tool",
   "productName": "axie-it",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Custom boilerplate for writing Desktop Applications using Electron, React, Webpack, TypeScript in 2020",
   "main": ".webpack/main",
   "scripts": {
