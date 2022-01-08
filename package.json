@@ -44,8 +44,8 @@
         "name": "@electron-forge/publisher-github",
         "config": {
           "repository": {
-            "owner": "eric-wee",
-            "name": "axie-infinity-tool"
+            "owner": "tzeweiwee",
+            "name": "electron-axie-tool"
           }
         },
         "draft": true
