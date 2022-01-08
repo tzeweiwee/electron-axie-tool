@@ -38,7 +38,19 @@
   },
   "license": "MIT",
   "config": {
-    "forge": "./tools/forge/forge.config.js"
+    "forge": "./tools/forge/forge.config.js",
+    "publishers": [
+      {
+        "name": "@electron-forge/publisher-github",
+        "config": {
+          "repository": {
+            "owner": "eric-wee",
+            "name": "axie-infinity-tool"
+          }
+        },
+        "draft": true
+      }
+    ]
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.61",
