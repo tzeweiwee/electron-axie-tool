@@ -44,6 +44,21 @@ const EnergyCalculator: React.FC = () => {
     }
   };
 
+  const handleTurnReset = () => {
+    setRound(1);
+    setEnergy(3);
+    setGainCounterValue(0);
+    setLossCounterValue(0);
+  }
+
+  const handleEndTurn = () => {
+    const nextEnergy = energy + 2;
+    setEnergy(nextEnergy > 10 ? 10 : nextEnergy);
+    setRound(round + 1);
+    setGainCounterValue(0);
+    setLossCounterValue(0);
+  }
+
   return (
     <>
       <Heading color='brand'>Energy Calculator</Heading>
@@ -84,10 +99,10 @@ const EnergyCalculator: React.FC = () => {
         </Box>
         <Box justify='center' align="center">
           <Box direction='row' width='400px' justify="around">
-            <Button name='startMatch' onClick={() => {}}>
+            <Button name='startMatch' onClick={handleTurnReset}>
               Start Match
             </Button>
-            <Button name='endTurn' onClick={() => {}}>
+            <Button name='endTurn' onClick={handleEndTurn}>
               End Turn
             </Button>
           </Box>
