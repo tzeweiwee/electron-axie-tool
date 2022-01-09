@@ -38,19 +38,7 @@
   },
   "license": "MIT",
   "config": {
-    "forge": "./tools/forge/forge.config.js",
-    "publishers": [
-      {
-        "name": "@electron-forge/publisher-github",
-        "config": {
-          "repository": {
-            "owner": "tzeweiwee",
-            "name": "electron-axie-tool"
-          }
-        },
-        "draft": true
-      }
-    ]
+    "forge": "./tools/forge/forge.config.js"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.61",

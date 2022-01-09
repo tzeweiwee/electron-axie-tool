@@ -85,4 +85,16 @@ module.exports = {
       },
     ],
   ],
+  // create draft release
+  "publishers": [
+    {
+      "name": "@electron-forge/publisher-github",
+      "config": {
+        "repository": {
+          "owner": "tzeweiwee",
+          "name": "electron-axie-tool"
+        }
+      },
+      "draft": true
+    }
 };
